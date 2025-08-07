@@ -1,16 +1,48 @@
-import './App.css'
-import Caroussel from './components/caroussel'
-import Footer from './components/footer'
-import Header from './components/header'
+import "./App.css";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Outlet,
+  Navigate,
+} from "react-router-dom";
 
-function App() {
+import Home from "./Pages/home";
+import Header from "./components/header";
+import Footer from "./components/footer";
+
+// Composant layout contenant Header, Footer et Outlet (zone de contenu dynamique)
+function RootLayout() {
   return (
-    <>
-      <Header></Header>
-      <Caroussel></Caroussel>
-      <Footer></Footer>
-    </>
-  )
+    <div>
+      <Header />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootLayout />,
+    children: [
+      {
+        // path: "home",
+        index: true,
+        element: <Navigate to="/home" />,
+      },
+      {
+        path: "home",
+        element: <Home />,
+      },
+    ],
+  },
+]);
+
+function App() {
+  return <RouterProvider router={router} />;
+}
+
+export default App;
