@@ -6,7 +6,8 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import Home from "./Pages/home";
+import Home from "./Pages/Home";
+import Apropos from "./Pages/Propos";
 import Header from "./components/header";
 import Footer from "./components/footer";
 
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "home",
         element: <Home />,
+      },
+      {
+        path: "a-propos",
+        element: <Apropos />,
       },
     ],
   },

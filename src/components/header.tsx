@@ -7,7 +7,7 @@ import type { Menu } from "../models/menu.model";
 
 const navigation: Menu[] = [
   { name: "Accueil", href: "/home" },
-  { name: "A propos", href: "/about" },
+  { name: "A propos", href: "/a-propos" },
   {
     name: "Service",
     href: "/services",
