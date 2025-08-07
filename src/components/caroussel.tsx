@@ -31,6 +31,7 @@ export default function Caroussel() {
 
   return (
     <div className="relative w-full z-0">
+      <div className="h-24 bg-white"></div>
       {/* Images */}
       <div className="relative h-56 overflow-hidden md:h-[100vh]">
         {images.map((img, index) => (

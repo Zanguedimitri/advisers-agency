@@ -26,23 +26,22 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-white/30 backdrop-invert backdrop-opacity-10 z-100">
-      <header className="inset-x-0 top-0 z-50 bg-transparent">
+    <div className="bg-white/70 backdrop-invert backdrop-opacity-10 z-100 fixed top-0 w-full">
+      <header className="inset-x-0 top-0 z-50 bg-transparent flex px-12">
+        {/* Logo */}
+        <div>
+          <Link to="/" className="-m-1.5 p-1.5 object-none">
+            <img
+              alt="logo de Advisers Agency"
+              src={logo}
+              className="h-12 w-30 "
+            />
+          </Link>
+        </div>
         <nav
           aria-label="Global"
-          className="flex items-center justify-center gap-[5rem] py-2"
+          className="flex items-center justify-center gap-x-[5rem] py-2"
         >
-          {/* Logo */}
-          <div>
-            <Link to="/" className="-m-1.5 p-1.5">
-              <img
-                alt="logo de Advisers Agency"
-                src={logo}
-                className="h-auto w-auto"
-              />
-            </Link>
-          </div>
-
           {/* Menu mobile (à activer plus tard) */}
           <div className="flex lg:hidden">
             <button
@@ -115,12 +114,12 @@ export default function Header() {
             <form className="max-w-md mx-auto">
               <label
                 htmlFor="default-search"
-                className="mb-2 text-sm font-medium text-gray-900 sr-only"
+                className="mb-2 text-sm font-medium text-gray-900 sr-only "
               >
                 Search
               </label>
               <div className="relative">
-                <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                <div className="absolute inset-y-0 start-0 flex items-center ps-3  pointer-events-auto">
                   <svg
                     className="w-4 h-4 text-gray-500"
                     aria-hidden="true"
