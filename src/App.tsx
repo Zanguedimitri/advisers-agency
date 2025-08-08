@@ -8,6 +8,8 @@ import {
 
 import Home from "./Pages/Home";
 import Apropos from "./Pages/Propos";
+import EtudesEtranger from "./Pages/Services/EtudesEtranger";
+import WorkStudy from "./Pages/Services/WorkStudy.jsx";
 import Header from "./components/header";
 import Footer from "./components/footer";
 
@@ -41,6 +43,13 @@ const router = createBrowserRouter([
       {
         path: "a-propos",
         element: <Apropos />,
+      },
+      {
+        path: "services",
+        children: [
+          { path: "etudes-a-l-etranger", element: <EtudesEtranger /> },
+          { path: "work-study", element: <WorkStudy /> },
+        ],
       },
     ],
   },
