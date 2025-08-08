@@ -82,7 +82,7 @@ export default function Header() {
                   </Link>
 
                   {/* Sous-menu */}
-                  <div className="absolute left-0 top-full mt-2 hidden min-w-[16rem]  rounded-md bg-white shadow-lg group-hover:block z-50">
+                  <div className="absolute left-0 top-full mt-[2px] hidden min-w-[16rem] hover:block rounded-md bg-white shadow-lg group-hover:block z-50">
                     <ul className="py-2">
                       {item.children.map((child) => (
                         <li key={child.name}>

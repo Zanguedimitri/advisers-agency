@@ -49,8 +49,32 @@ const router = createBrowserRouter([
         children: [
           { path: "etudes-a-l-etranger", element: <EtudesEtranger /> },
           { path: "work-study", element: <WorkStudy /> },
+          {
+            path: "/services/stage-a-l-international-usa",
+            element: <div>Stage à l'international - USA</div>,
+          },
+          {
+            path: "/services/colonies-de-vacances",
+            element: <div>08 - 18 Ans</div>,
+          },
+          {
+            path: "/services/immigration-canadienne",
+            element: <div> immigration-canadienne</div>,
+          },
+          {
+            path: "/services/voyages-decouvertes",
+            element: <div>Pour les Touristes</div>,
+          },
+          {
+            path: "/services/student-competitions",
+            element: <div>Student Competitions</div>,
+          },
         ],
       },
+
+      { element: <div>"FAQS"</div>, path: "faq" },
+      { element: <div>"Info & Actu"</div>, path: "news" },
+      { element: <div>"Contact"</div>, path: "contact" },
     ],
   },
 ]);

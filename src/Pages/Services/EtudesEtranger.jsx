@@ -1,6 +1,9 @@
+import Caroussel from "../../components/caroussel";
 export function EtudesEtranger() {
   return (
     <div className="bg-gray-100 min-h-screen">
+      <Caroussel />
+
       {/* section header */}
       <section className="bg-blue-900 text-white py-20 px-6">
         <h1 className="text-4xl font-bold mb-4">Études à l'Étranger</h1>
