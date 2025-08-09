@@ -1,8 +1,15 @@
 import Caroussel from "../../components/caroussel";
+import image1 from "../../assets/apprendre-langue-etrangerewebp.webp";
+import image2 from "../../assets/portrait-personnes-arc-ciel-avif.avif";
+import image3 from "../../assets/img_services2.avif";
+import image4 from "../../assets/img_service.avif";
+import image5 from "../../assets/culture.jpg";
+
+const imagesList = [image1, image2, image3, image4, image5];
 export function EtudesEtranger() {
   return (
     <div className="bg-gray-100 min-h-screen">
-      <Caroussel />
+      <Caroussel images={imagesList} />
 
       {/* section header */}
       <section className="bg-blue-900 text-white py-20 px-6">

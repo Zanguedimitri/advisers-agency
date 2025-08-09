@@ -9,9 +9,10 @@ import {
 import Home from "./Pages/Home";
 import Apropos from "./Pages/Propos";
 import EtudesEtranger from "./Pages/Services/EtudesEtranger";
-import WorkStudy from "./Pages/Services/WorkStudy.jsx";
+import WorkStudy from "./Pages/Services/WorkStudy";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import WorkAccordionMenu from "./components/AccordionMenu";
 
 // Composant layout contenant Header, Footer et Outlet (zone de contenu dynamique)
 function RootLayout() {
@@ -75,6 +76,7 @@ const router = createBrowserRouter([
       { element: <div>"FAQS"</div>, path: "faq" },
       { element: <div>"Info & Actu"</div>, path: "news" },
       { element: <div>"Contact"</div>, path: "contact" },
+      { element: <WorkAccordionMenu />, path: "accordion-menu" },
     ],
   },
 ]);

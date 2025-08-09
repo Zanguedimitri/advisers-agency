@@ -1,11 +1,17 @@
 import { useParams } from "react-router-dom";
 import Caroussel from "../components/caroussel";
+import first from "../assets/first_home.avif";
+import second from "../assets/second_home.avif";
+import book from "../assets/book_home.avif";
+import chimi from "../assets/chimi_home.avif";
+
+const imagesList = [first, second, book, chimi];
 
 export function Home() {
   const { id } = useParams();
   return (
     <div className="z-10">
-      <Caroussel />
+      <Caroussel images={imagesList} />
       {/* section services */}
       <section className="flex flex-row gap-x-8 p-20">
         <div className="flex flex-wrap  justify-between gap-w-4 gap-y-25 w-[70%] ">

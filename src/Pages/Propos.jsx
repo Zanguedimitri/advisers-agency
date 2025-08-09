@@ -1,11 +1,12 @@
 import apropos from "../assets/img_apropos.avif";
 import patrick from "../assets/patrick-advisers-bureau-douala.avif";
 import Amira from "../assets/Amira-bureau-advisers-lome.avif";
+import DivNavBar from "../components/divNavBar";
 
 export function Apropos() {
   return (
     <div className="">
-      <div className="h-24 bg-white z-0"></div>
+      <DivNavBar />
       <section>
         <img src={`${apropos}`} className="w-full z-0 relative" alt="" />
       </section>
