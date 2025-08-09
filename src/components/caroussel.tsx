@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-
+// import divNavBar from "./divNavBar";
+import DivNavBar from "./divNavBar";
 type CarousselProps = {
   images: string[];
 };
@@ -29,7 +30,9 @@ export default function Caroussel({ images }: CarousselProps) {
 
   return (
     <div className="relative w-full z-0">
-      <div className="h-24 bg-white"></div>
+      {/* <div className="h-24 bg-white"></div> */}
+      <DivNavBar />
+
       {/* Images */}
       <div className="relative h-56 overflow-hidden md:h-[100vh]">
         {images.map((img, index) => (
