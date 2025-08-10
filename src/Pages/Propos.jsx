@@ -1,17 +1,33 @@
 import apropos from "../assets/img_apropos.avif";
 import patrick from "../assets/patrick-advisers-bureau-douala.avif";
 import Amira from "../assets/Amira-bureau-advisers-lome.avif";
-import DivNavBar from "../components/divNavBar";
+import DivNavBar from "../components/DivNavBar";
 
 export function Apropos() {
   return (
-    <div className="">
+    <div>
       <DivNavBar />
-      <section>
-        <img src={`${apropos}`} className="w-full z-0 relative" alt="" />
-      </section>
+      {/* <section>
+        <img
+          src={`${apropos}`}
+          className="w-full z-0 relative bg-fixed"
+          alt=""
+        />
+      </section> */}
+      <div
+        className="bg-fixed top-0 left-0 w-full h-8   z-0 "
+        style={{
+          backgroundImage: `url(${apropos})`,
+          // backgroundSize: "cover",
+          // backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+
+          minHeight: "50vh",
+        }}
+      ></div>
+
       <section className="px-5 md:px-30 py-5 z-10 flex flex-col gap-y-20 justify-center items-center mt-6 ">
-        <div className="flex flex-col gap-y-6 w-[80%] sm:w-[70%] md:w-[70%] lg:w-[90%]">
+        <div className="bg-fixed flex flex-col gap-y-6  w-[80%] sm:w-[70%] md:w-[70%] lg:w-[90%] z-20">
           <h1 className="text-2xl font-bold">Advisers Agency</h1>
           <p className="text-justify text-lg">
             Spécialiste des études à l’étranger depuis décembre 2006, Advisers
