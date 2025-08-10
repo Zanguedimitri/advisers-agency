@@ -13,7 +13,7 @@ export function WorkStudy() {
       </div>
       {/*  */}
       <div
-        className="h-170 w-full relative flex pl-30 items-start"
+        className="h-170  w-full relative flex pl-30 items-start"
         style={{ backgroundImage: `url(${image2})`, backgroundSize: "cover" }}
       >
         {/* <img src={`${image2}`} alt="" className="h-full w-full opacity-75" /> */}
@@ -21,13 +21,13 @@ export function WorkStudy() {
       </div>
 
       {/* section 1 */}
-      <section className="bg-[#D5DCF5]  py-20 px-10 md:px-20 flex flex-col justify-center sm:justify-normal sm:flex-row gap-10">
+      <section className="bg-[#D5DCF5]  py-20 px-10 md:px-20 flex flex-col justify-center  md:flex-row gap-10">
         <div className="flex flex-col sm:px-20 ">
           <div className=" ">
-            <h1 className="text-3xl font-bold  mb-4 text-blue-950">
+            <h1 className="text-3xl font-bold text-center md:text-justify mb-4 text-blue-950">
               Pour ce projet, notre TEAM vous garantie
             </h1>
-            <p className="border-b-2 border-b-blue-900 sm:w-140 h-2 "></p>
+            <p className="border-b-2 border-b-blue-900 md:w-140 h-2 "></p>
             <ul className="list-disc font-semibold mt-6 text-justify flex flex-col gap-4">
               <li>Une écoute attentive de vos besoins. </li>
               <li>
@@ -81,7 +81,7 @@ export function WorkStudy() {
               d’immigration et de douane.
             </p>
           </div>
-          <div className="bg-blue-900 shadow-md p-6 mt-10 rounded-lg w-80 sm:w-100 text-white flex flex-col justify-center items-center">
+          <div className="bg-blue-900  p-6 mt-10 rounded-lg w-80 sm:w-100 shadow-2xl text-white flex flex-col justify-center items-center">
             <h3 className="text-xl font-semibold mt-6 text-center">
               Pourquoi choisir le travail-études ?
             </h3>
@@ -97,9 +97,12 @@ export function WorkStudy() {
           </div>
         </div>
         {/*  */}
-        <div className=" flex flex-col gap-50 justify-center sm:justify-normal">
-          <div className="bg-white shadow-md mt-10 w-70 h-80"></div>
-          <div className=" bg-white shadow-md mt-10 w-70 h-80"></div>
+        <div className=" flex flex-col gap-50 justify-center items-center">
+          <div className="bg-blue-700 shadow-md mt-10 w-70 h-80"></div>
+          <div className=" bg-red-700 shadow-md mt-10 w-70 h-80"></div>
+        </div>
+        <div>
+          <ul></ul>
         </div>
       </section>
 

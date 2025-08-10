@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 // import divNavBar from "./divNavBar";
-import DivNavBar from "./divNavBar";
+import DivNavBar from "./DivNavBar";
 type CarousselProps = {
   images: string[];
 };
