@@ -16,8 +16,8 @@ export function Home() {
     <div className="z-10">
       <Caroussel images={imagesList} />
       {/* section services */}
-      <section className="flex flex-col items-center md:flex-row gap-x-8 pt-20 p-5 md:p-20 bg-gray-300  gap-y-10">
-        <div className="w-8/10 md:w-3/10 flex flex-col justify-start items-center md:items-start  gap-y-4">
+      <section className="flex flex-col items-center md:flex-row gap-x-8 pt-20  md:p-20 bg-gray-300  ">
+        <div className="w-8/10 md:w-3/10 flex flex-col justify-start items-start md:items-start gap-y-8 pb-40">
           <h1 className="text-3xl ">NOS SERVICES</h1>
           <p>
             Depuis 2006, Advisers Agency offre aux Africains une gamme de
@@ -28,37 +28,37 @@ export function Home() {
             <span>Côte d'Ivoire</span>.{" "}
           </p>
           <div className="flex flex-row  gap-x-4 ">
-            <button className="bg-blue-900 rounded-md px-2 h-8 w-20">
+            <button className="bg-blue-900 hover:bg-blue-700 cursor-pointer rounded-md px-2 h-8 w-20">
               Plus
             </button>
-            <button className="bg-blue-900 rounded-md px-2 h-8">
+            <button className="bg-blue-900  hover:bg-blue-700 cursor-pointer rounded-md px-2 h-8">
               <i class="fa-brands fa-facebook-f text-white"></i>
             </button>
           </div>
         </div>
         <div className="flex flex-wrap justify-center  md:justify-between gap-x-4 gap-y-10 md:gap-y-25 md:w-7/10 text-center">
-          <div className="h-42.5 w-42.5 bg-red-700  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
+          <div className="h-42.5 w-42.5 bg-red-700 cursor-pointer  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
             Les Plus Sollicités
           </div>
-          <div className="h-42.5 w-42.5 bg-red-700  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
+          <div className="h-42.5 w-42.5 bg-red-700 cursor-pointer  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
             Zork & Study
           </div>
-          <div className="h-42.5 w-42.5 bg-red-700  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
+          <div className="h-42.5 w-42.5 bg-red-700 cursor-pointer  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
             Etudier à L'étranger
           </div>
-          <div className="h-42.5 w-42.5 bg-red-700  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
+          <div className="h-42.5 w-42.5 bg-red-700 cursor-pointer  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
             Immigration Canadienne
           </div>
-          <div className="h-42.5 w-42.5 bg-red-700  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
+          <div className="h-42.5 w-42.5 bg-red-700 cursor-pointer  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
             Les Juniors 08-18 ans
           </div>
-          <div className="h-42.5 w-42.5 bg-red-700  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
+          <div className="h-42.5 w-42.5 bg-red-700 cursor-pointer  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
             Stages à L'international{" "}
           </div>
-          <div className="h-42.5 w-42.5 bg-red-700  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
+          <div className="h-42.5 w-42.5 bg-red-700 cursor-pointer  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
             Voyages Découvertes
           </div>
-          <div className="h-42.5 w-42.5 bg-red-700  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
+          <div className="h-42.5 w-42.5 bg-red-700 cursor-pointer  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
             Student Competitions
           </div>
         </div>
@@ -71,12 +71,12 @@ export function Home() {
           expertise avérée.
         </p> */}
         <div className="flex  flex-row justify-start gap-x-38 gap-y-4">
-          <div className="h-10 w-100 flex flex-col gap-y-10 p-5">
+          <div className=" w-100 flex flex-col gap-y-10 p-5">
             <p className="text-xl text-center">
               Une équipe cosmopolite constituée de professionnels dotés d'une
               expertise avérée.{" "}
             </p>
-            <button className="bg-blue-900 rounded-md px-2 h-8 w-20">
+            <button className="bg-blue-900 rounded-md px-2 h-8 w-20  hover:bg-blue-700 cursor-pointer">
               Plus
             </button>
           </div>
@@ -120,20 +120,20 @@ export function Home() {
           </div>
           <div className="h-96 w-[40%] bg-blue-800 rounded-2xl">
             <form className="flex flex-col justify-center items-center gap-y-4 p-10">
-              <h1 className="text-xl text-white font-bold p-4 text-center">
+              <h1 className="text-xl text-blue-800 font-bold text-center bg-white">
                 Recevez nos offres de bourses et stage{" "}
                 <span className="text-base">
                   Afrique, Europe, Amérique, Asie
                 </span>
               </h1>
               <div className="pr-10  flex flex-col justify-between items-center gap-y-2">
-                <input type="text" placeholder="Nom" className="bg-white" />
+                <input type="text" placeholder="Nom" className="bg-white " />
                 <input type="email" placeholder="Email" className="bg-white" />
               </div>
 
               <div className=" flex flex-row justify-end pl-10 items-center gap-x-2">
                 {/* indicatif */}
-                <select className="w-16 border-[2px] border-black h-10 rounded-md ">
+                <select className="w-16 border-[1px] border-black h-10 rounded-md ">
                   <option value="+237">+237</option>
                   <option value="+228">+228</option>
                   <option value="+225">+225</option>
@@ -153,7 +153,7 @@ export function Home() {
         </div>
       </section>
       {/* section DERNIERS ARTICLES DU BLOG */}
-      <section className="flex flex-col justify-center items-center gap-y-4 p-20 border-b-2 border-blue-900 my-10">
+      <section className="flex flex-col justify-center items-center bg-[#808CB2] gap-y-4 p-20 border-b-2 border-blue-900 my-10">
         <h1 className="text-3xl">Derniers Articles du Blog</h1>
         <p>
           Restez informé avec nos derniers articles et actualités sur nos

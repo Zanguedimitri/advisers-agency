@@ -10,6 +10,11 @@ import Home from "./Pages/Home";
 import Apropos from "./Pages/Propos";
 import EtudesEtranger from "./Pages/Services/EtudesEtranger";
 import WorkStudy from "./Pages/Services/WorkStudy";
+import ColoniesVacances from "./Pages/Services/ColoniesVacances";
+import StageInternational from "./Pages/Services/StageInternational";
+import ImmigrationCanadienne from "./Pages/Services/ImmigrationCanadienne";
+import VoyagesDecouvertes from "./Pages/Services/VoyagesDecouvertes";
+import StudentCompetitions from "./Pages/Services/StudentCompetitions";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import WorkAccordionMenu from "./components/AccordionMenu";
@@ -52,23 +57,23 @@ const router = createBrowserRouter([
           { path: "work-study", element: <WorkStudy /> },
           {
             path: "/services/stage-a-l-international-usa",
-            element: <div>Stage à l'international - USA</div>,
+            element: <StageInternational />,
           },
           {
             path: "/services/colonies-de-vacances",
-            element: <div>08 - 18 Ans</div>,
+            element: <ColoniesVacances />,
           },
           {
             path: "/services/immigration-canadienne",
-            element: <div> immigration-canadienne</div>,
+            element: <ImmigrationCanadienne />,
           },
           {
             path: "/services/voyages-decouvertes",
-            element: <div>Pour les Touristes</div>,
+            element: <VoyagesDecouvertes />,
           },
           {
             path: "/services/student-competitions",
-            element: <div>Student Competitions</div>,
+            element: <StudentCompetitions />,
           },
         ],
       },

@@ -15,7 +15,7 @@ export function Apropos() {
         />
       </section> */}
       <div
-        className="bg-fixed top-0 left-0 w-full h-8   z-0 "
+        className="bg-fixed top-0 left-0 w-full h-8   z-0"
         style={{
           backgroundImage: `url(${apropos})`,
           // backgroundSize: "cover",

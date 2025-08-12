@@ -21,23 +21,67 @@ export function EtudesEtranger() {
       </section>
 
       {/* section content */}
-      <section className="max-w-6xl mx-auto p-6 bg-white shadow-md mt-10">
-        <h2 className="text-2xl font-semibold mb-4">Nos Services</h2>
-        <p>
-          Nous offrons une gamme complète de services pour vous aider à réaliser
-          votre rêve d'étudier à l'étranger, y compris la sélection des
-          universités, l'assistance à la demande de visa, et le soutien
-          logistique.
-        </p>
+      <section className="mt-10  ">
+        <h2 className="text-5xl text-center font-semibold mb-4 ">
+          Sélectionnez votre destination
+        </h2>
+        <div className="flex flex-row gap-x-16 p-20">
+          <ul className=" pl-6 space-y-2 grid grid-cols-3 gap-4 grid-rows-4">
+            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
+              <strong>Asie :</strong> Plongez dans la culture asiatique tou
+            </li>
+            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
+              <strong>Asie :</strong> Plongez dans la culture asiatique tou
+            </li>
+            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
+              <strong>Asie :</strong> Plongez dans la culture asiatique tou
+            </li>
+            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
+              <strong>Asie :</strong> Plongez dans la culture asiatique tou
+            </li>
+            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
+              <strong>Asie :</strong> Plongez dans la culture asiatique tou
+            </li>
+            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
+              <strong>Asie :</strong> Plongez dans la culture asiatique tou
+            </li>
+            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
+              <strong>Asie :</strong> Plongez dans la culture asiatique tou
+            </li>
+            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
+              <strong>Asie :</strong> Plongez dans la culture asiatique tou
+            </li>
+            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
+              <strong>Asie :</strong> Plongez dans la culture asiatique tou
+            </li>
+            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
+              <strong>Asie :</strong> Plongez dans la culture asiatique tou
+            </li>
+            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
+              <strong>Asie :</strong> Plongez dans la culture asiatique tou
+            </li>
+            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
+              <strong>Asie :</strong> Plongez dans la culture asiatique tou
+            </li>
+          </ul>
+          <div className="flex flex-col gap-y-14">
+            <button className="w-80 h-14 bg-blue-900 rounded hover:bg-blue-700 cursor-pointer text-xl p-2 ">
+              <i class="fa-solid fa-briefcase fa-xl"></i> Téléchargez toutes nos
+              offres
+            </button>
+            <div className="bg-amber-400 h-100 w-80"></div>
+          </div>
+        </div>
       </section>
 
       {/* section contact */}
-      <section className="max-w-6xl mx-auto p-6 bg-white shadow-md mt-10">
-        <h2 className="text-2xl font-semibold mb-4">Contactez-nous</h2>
-        <p>
-          Pour plus d'informations sur nos services, n'hésitez pas à nous
-          contacter via notre formulaire en ligne ou par téléphone.
-        </p>
+      <section className="max-w-6xl mx-auto p-6 bg-white shadow-md mt-10 flex flex-row justify-between items-center">
+        <h2 className="text-2xl font-semibold mb-4">
+          Vous voulez en savoir plus ?
+        </h2>
+        <button className="bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer ">
+          Prenez un rendez-vous !
+        </button>
       </section>
     </div>
   );
