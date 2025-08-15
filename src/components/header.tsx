@@ -7,14 +7,24 @@ import type { Menu } from "../models/menu.model";
 
 const navigation: Menu[] = [
   { name: "Accueil", href: "/home" },
-  { name: "A propos", href: "/about" },
+  { name: "A propos", href: "/a-propos" },
   {
     name: "Service",
     href: "/services",
     children: [
-      { name: "Consulting", href: "/services/consulting" },
-      { name: "Développement Web", href: "/services/web" },
-      { name: "Marketing Digital", href: "/services/marketing" },
+      { name: "Etudier à l'étranger", href: "/services/etudes-a-l-etranger" },
+      { name: "Work & Study", href: "/services/work-study" },
+      {
+        name: " Stage à l'international - USA",
+        href: "/services/stage-a-l-international-usa",
+      },
+      { name: "08 - 18 Ans", href: "/services/colonies-de-vacances" },
+      {
+        name: "Immigration Canadienne",
+        href: "/services/immigration-canadienne",
+      },
+      { name: "Pour les Touristes", href: "/services/voyages-decouvertes" },
+      { name: "Student Competitions", href: "/services/student-competitions" },
     ],
   },
   { name: "FAQS", href: "/faq" },
@@ -72,18 +82,18 @@ export default function Header() {
                   </Link>
 
                   {/* Sous-menu */}
-                  <div className="absolute left-0 top-full mt-2 hidden min-w-[12rem] rounded-md bg-white shadow-lg group-hover:block z-50">
+                  <div className="absolute left-0 top-full mt-[2px] hidden min-w-[16rem] hover:block rounded-md bg-white shadow-lg group-hover:block z-50">
                     <ul className="py-2">
                       {item.children.map((child) => (
                         <li key={child.name}>
                           <Link
                             to={child.href}
-                            className="text-lg block font-semibold text-[#273b7bff]
+                            className="text-base block font-semibold text-[#273b7bff]
                                                         border-t-2 border-[#273b7bff]
                                                         hover:text-[#f16876] focus:text-[#f16876]
                                                         hover:border-[#f16876] focus:border-[#f16876]
                                                         hover:border-t-4 focus:border-t-4
-                                                        transition-all duration-300 px-4 py-2"
+                                                        transition-all duration-300 px-4 py-2 "
                           >
                             {child.name}
                           </Link>

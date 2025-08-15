@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
-import first from "../assets/first_home.avif";
-import second from "../assets/second_home.avif";
-import book from "../assets/book_home.avif";
-import chimi from "../assets/chimi_home.avif";
+// import divNavBar from "./divNavBar";
+import DivNavBar from "./DivNavBar";
+type CarousselProps = {
+  images: string[];
+};
 
-const images = [first, second, book, chimi];
-
-export default function Caroussel() {
+export default function Caroussel({ images }: CarousselProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   // Auto-slide every 5s (optional)
@@ -31,7 +30,9 @@ export default function Caroussel() {
 
   return (
     <div className="relative w-full z-0">
-      <div className="h-24 bg-white"></div>
+      {/* <div className="h-24 bg-white"></div> */}
+      <DivNavBar />
+
       {/* Images */}
       <div className="relative h-56 overflow-hidden md:h-[100vh]">
         {images.map((img, index) => (
