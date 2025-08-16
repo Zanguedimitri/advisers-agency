@@ -86,6 +86,7 @@ export function StageInternational() {
           <div className="w-full h-20 bg-blue-900 text-white flex flex-col items-start p-6 justify-center">
             <a href="#">
               {" "}
+<<<<<<< HEAD
               <i className="fa-solid fa-file text-black mr-2"></i>Exemple
               d'offre de stage ingénieur
             </a>
@@ -93,6 +94,15 @@ export function StageInternational() {
               {" "}
               <i className="fa-solid fa-file text-black mr-2"></i>Exemple
               d'offre de stage Manager MBA
+=======
+              <i className="fa-solid fa-file text-black mr-2"></i>Exemple d'offre de
+              stage ingénieur
+            </a>
+            <a href="#">
+              {" "}
+              <i className="fa-solid fa-file text-black mr-2"></i>Exemple d'offre de
+              stage Manager MBA
+>>>>>>> 5a0ab0569d5813b87048290d1204677f46c6ad2f
             </a>
           </div>
         </div>

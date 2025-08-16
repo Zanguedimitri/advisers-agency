@@ -66,8 +66,13 @@ export function EtudesEtranger() {
           </ul>
           <div className="flex flex-col gap-y-14">
             <button className="w-80 h-14 bg-blue-900 rounded hover:bg-blue-700 cursor-pointer text-xl p-2 ">
+<<<<<<< HEAD
               <i className="fa-solid fa-briefcase fa-xl"></i> Téléchargez toutes
               nos offres
+=======
+              <i className="fa-solid fa-briefcase fa-xl"></i> Téléchargez toutes nos
+              offres
+>>>>>>> 5a0ab0569d5813b87048290d1204677f46c6ad2f
             </button>
             <div className="bg-amber-400 h-100 w-80"></div>
           </div>

@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#002E5D] rounded-lg shadow-sm m-4">
+    <footer className="bg-[#002E5D] shadow-sm">
       <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <span className="text-sm text-white sm:text-center">
           © 2023 par Advisers Agency.

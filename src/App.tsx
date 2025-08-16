@@ -18,6 +18,10 @@ import StudentCompetitions from "./Pages/Services/StudentCompetitions";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import WorkAccordionMenu from "./components/AccordionMenu";
+import Faq from "./pages/faq";
+import Information from "./pages/information";
+import DetailsInformation from "./pages/detailsBlog/detailsInformation";
+import Contact from "./pages/contact";
 
 // Composant layout contenant Header, Footer et Outlet (zone de contenu dynamique)
 function RootLayout() {
@@ -78,9 +82,16 @@ const router = createBrowserRouter([
         ],
       },
 
-      { element: <div>"FAQS"</div>, path: "faq" },
-      { element: <div>"Info & Actu"</div>, path: "news" },
-      { element: <div>"Contact"</div>, path: "contact" },
+      { element: <Faq></Faq>, path: "faq" },
+      {
+        element: <Information></Information>, path: "news", children: [
+          {
+            path:'details/:id',
+            element:<DetailsInformation></DetailsInformation>
+          }
+        ]
+      },
+      { element: <Contact></Contact>, path: "contact" },
       { element: <WorkAccordionMenu />, path: "accordion-menu" },
     ],
   },
