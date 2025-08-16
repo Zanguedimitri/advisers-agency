@@ -86,12 +86,12 @@ export function StageInternational() {
           <div className="w-full h-20 bg-blue-900 text-white flex flex-col items-start p-6 justify-center">
             <a href="#">
               {" "}
-              <i class="fa-solid fa-file text-black mr-2"></i>Exemple d'offre de
+              <i className="fa-solid fa-file text-black mr-2"></i>Exemple d'offre de
               stage ingénieur
             </a>
             <a href="#">
               {" "}
-              <i class="fa-solid fa-file text-black mr-2"></i>Exemple d'offre de
+              <i className="fa-solid fa-file text-black mr-2"></i>Exemple d'offre de
               stage Manager MBA
             </a>
           </div>
@@ -290,7 +290,7 @@ export function StageInternational() {
         <p className="text-2xl text-blue-900 text-shadow-black font-bold">
           Plus d'infos ? Contactez nous sur
         </p>
-        <i class="fa-brands fa-whatsapp  text-green-700 fa-2xl"></i>
+        <i className="fa-brands fa-whatsapp  text-green-700 fa-2xl"></i>
         <button className="text-2xl text-white bg-green-600 p-2 rounded-lg hover:bg-green-500 transition-colors duration-300">
           Nous Contacter
         </button>

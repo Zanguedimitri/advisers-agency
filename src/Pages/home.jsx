@@ -32,7 +32,7 @@ export function Home() {
               Plus
             </button>
             <button className="bg-blue-900  hover:bg-blue-700 cursor-pointer rounded-md px-2 h-8">
-              <i class="fa-brands fa-facebook-f text-white"></i>
+              <i className="fa-brands fa-facebook-f text-white"></i>
             </button>
           </div>
         </div>
