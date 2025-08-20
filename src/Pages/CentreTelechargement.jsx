@@ -1,5 +1,5 @@
 import React from "react";
-import DivNavBar from "../components/DivNavBar";
+import DivNavBar from "../components/divNavBar";
 import { Link } from "react-router-dom";
 const downloads = {
   etudes: [

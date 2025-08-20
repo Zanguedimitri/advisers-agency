@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import imgbg from "../assets/intership_usa_advisers_agency.avif";
-import DivNavBar from "../components/DivNavBar";
+import DivNavBar from "../components/divNavBar";
 
 export default function FormulaireStageInternational() {
   const [form, setForm] = useState({

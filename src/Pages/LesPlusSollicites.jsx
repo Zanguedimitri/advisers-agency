@@ -1,7 +1,7 @@
 import img1 from "../assets/best-seller.png";
 import img2 from "../assets/image_plus_1.avif";
 import img3 from "../assets/img_bestseller.avif";
-import DivNavBar from "../components/DivNavBar";
+import DivNavBar from "../components/divNavBar";
 
 function LesPlusSollicites() {
   return (

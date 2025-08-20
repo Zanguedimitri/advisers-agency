@@ -8,7 +8,7 @@ import imgaediv5 from "../../assets/image_JPG5.avif";
 
 import logo_mini from "../../assets/logo_mini.avif";
 import image_help from "../../assets/image_help.jpg";
-import DivNavBar from "../../components/DivNavBar";
+import DivNavBar from "../../components/divNavBar";
 
 function StudentCompetitions() {
   return (

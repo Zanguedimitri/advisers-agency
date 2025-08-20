@@ -1,7 +1,7 @@
 import apropos from "../assets/img_apropos.avif";
 import patrick from "../assets/patrick-advisers-bureau-douala.avif";
 import Amira from "../assets/Amira-bureau-advisers-lome.avif";
-import DivNavBar from "../components/DivNavBar";
+import DivNavBar from "../components/divNavBar";
 import { Link } from "react-router-dom";
 
 export function Apropos() {

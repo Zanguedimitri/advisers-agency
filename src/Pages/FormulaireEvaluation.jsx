@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DivNavBar from "../components/DivNavBar";
+import DivNavBar from "../components/divNavBar";
 
 const FormulaireEvaluation = () => {
   const [form, setForm] = useState({
