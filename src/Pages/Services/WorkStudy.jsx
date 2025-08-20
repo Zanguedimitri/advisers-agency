@@ -4,6 +4,7 @@ import image2 from "../../assets/work-study1.avif";
 import DivNavBar from "../../components/DivNavBar";
 import WorkAccordionMenu from "../../components/AccordionMenu";
 // const imagesList = [image1, image2, image3, image4, image5];
+import { Link } from "react-router-dom";
 export function WorkStudy() {
   return (
     <div className="bg-gray-100 min-h-screen">
@@ -98,12 +99,56 @@ export function WorkStudy() {
         </div>
         {/*  */}
         <div className=" flex flex-col gap-50 justify-center items-center">
-          <div className="bg-blue-700 shadow-md mt-10 w-70 h-80"></div>
-          <div className=" bg-red-700 shadow-md mt-10 w-70 h-80"></div>
+          <div className="bg-blue-700 shadow-md mt-10 w-72 h-90 flex rounded-2xl  justify-center items-center group">
+            <div className="border-b-2 border-t-2 border-red-800 mx-8  px-12 group-hover:hidden">
+              <h1 className="text-3xl font-black text-center">
+                03 AVANTAGES DU WORK STUDY MBA
+              </h1>
+            </div>
+            <div className="border-b-2 border-t-2 border-red-800 p-8  hidden group-hover:flex flex-col justify-center items-center bg-white rounded-2xl ">
+              <h1 className="text-xl font-black text-center"> 03 AVANTAGES</h1>
+
+              <ul className="list-disc    py-4">
+                <li>
+                  15 Mois de stages en alternance, 08H de cours par semaine{" "}
+                </li>
+                <li>
+                  Scolarité payable mensuellement grâce au salaire de stagiaire
+                </li>
+                <li>
+                  Voyagez avec votre famille et installez vous légalement aux
+                  USA après votre diplôme
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/*  */}
+          <div className=" bg-red-700 shadow-md mt-10 w-72 p-4 h-90  rounded">
+            <h1 className="text-amber-400 to-yellow-600 text-2xl font-bold mb-4 text-center">
+              Cédric Nguidjol Program Analyst - Wachovia Bank
+            </h1>
+            <p className="text-center ">
+              J'étais septique au sujet des informations données par mon
+              conseillé client ; Aujourd'hui non seulement je vis à Salt Lake
+              City, mais j'y travaille à temps plein pour l'entreprise dans
+              laquelle j'ai effectué mon stage en alternance. Thank you so much,
+              Advisers{" "}
+            </p>
+          </div>
         </div>
         <div>
           <ul></ul>
         </div>
+      </section>
+      {/* section contact */}
+      <section className="w-full mx-auto p-6  shadow-md mt-10 flex flex-row justify-between items-center">
+        <h2 className="text-2xl font-semibold mb-4">
+          Vous voulez en savoir plus ?
+        </h2>
+        <button className="bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer ">
+          <Link to="/contact">Contactez Nous !</Link>
+        </button>
       </section>
 
       {/* section 2 */}

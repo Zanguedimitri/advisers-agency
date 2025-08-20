@@ -1,6 +1,11 @@
 import image1 from "../../assets/logo_big.avif";
 import image2 from "../../assets/studentdebater.avif";
-import image3 from "../../assets/image_JPG.avif";
+import imagediv1 from "../../assets/image_JPG.avif";
+import imgaediv2 from "../../assets/image_JPG2.avif";
+import imagediv3 from "../../assets/image_JPG3.avif";
+import imgaediv4 from "../../assets/image_JPG4.avif";
+import imgaediv5 from "../../assets/image_JPG5.avif";
+
 import logo_mini from "../../assets/logo_mini.avif";
 import image_help from "../../assets/image_help.jpg";
 import DivNavBar from "../../components/DivNavBar";
@@ -13,9 +18,15 @@ function StudentCompetitions() {
         <div className="flex justify-center items-center py-16 px-28">
           <img src={`${image1}`} alt="" className="w-80 h-40" />
         </div>
-
-        <img src={`${image2}`} alt="" />
-        <img src={`${image3}`} alt="" className="w-72 h-60" />
+        <img src={`${image2}`} alt="" />{" "}
+        <div className="flex flex-row max-w-full justify-between">
+          {" "}
+          <img src={`${imagediv1}`} alt="" className="w-60 h-60" />
+          <img src={`${imgaediv2}`} alt="" className="w-60 h-60" />
+          <img src={`${imagediv3}`} alt="" className="w-60 h-60" />
+          <img src={`${imgaediv4}`} alt="" className="w-60 h-60" />
+          <img src={`${imgaediv5}`} alt="" className="w-60 h-60" />
+        </div>
       </section>
       {/*  */}
       <section className="bg-white py-16 px-32 border-2 border-gray-300 flex flex-col gap-y-10">
@@ -46,8 +57,8 @@ function StudentCompetitions() {
           réseau de camerounais fiable qui peut aider à l'étranger.
         </p>
         <div>
-          <button className="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded cursor-pointer">
-            Price de contact
+          <button className="bg-blue-700 hover:bg-blue-600 mt-2 text-white p-2 rounded cursor-pointer">
+            Prendre contact
           </button>
         </div>
         <p className="border-2 border-red-800"></p>
@@ -80,7 +91,7 @@ function StudentCompetitions() {
               <li>Concours du meilleur projet</li>
               <li>Concours en développement international</li>
             </ul>
-            <button className="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded cursor-pointer">
+            <button className="bg-blue-700 hover:bg-blue-600 mt-2 text-white p-2 rounded cursor-pointer">
               En savoir plus
             </button>
           </div>
@@ -95,7 +106,7 @@ function StudentCompetitions() {
                 Les entreprises qui encouragent le leadership et l'éducation
               </li>
             </ul>
-            <button className="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded cursor-pointer">
+            <button className="bg-blue-700 hover:bg-blue-600 text-white mt-2 p-2 rounded cursor-pointer">
               Soutenez l'éducation
             </button>
           </div>
@@ -128,7 +139,7 @@ function StudentCompetitions() {
                 l'aide pour la réalisation de leurs rêves.
               </li>
             </ul>
-            <button className="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded cursor-pointer">
+            <button className="bg-blue-700 hover:bg-blue-600 text-white mt-2 p-2 rounded cursor-pointer">
               Nous contacter
             </button>
           </div>
@@ -156,8 +167,8 @@ function StudentCompetitions() {
 
               <li> Tous les instituts privés d'enseignement supérieur</li>
             </ul>
-            <button className="bg-blue-700 hover:bg-blue-600 text-white p-2 rounded cursor-pointer">
-              Patriciper à la compétition{" "}
+            <button className="bg-blue-700 hover:bg-blue-600 text-white mt-2 p-2 rounded cursor-pointer">
+              Participer à la compétition{" "}
             </button>
           </div>
         </div>

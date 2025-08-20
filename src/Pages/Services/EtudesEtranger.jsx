@@ -4,6 +4,35 @@ import image2 from "../../assets/portrait-personnes-arc-ciel-avif.avif";
 import image3 from "../../assets/img_services2.avif";
 import image4 from "../../assets/img_service.avif";
 import image5 from "../../assets/culture.jpg";
+import { Link } from "react-router-dom";
+
+import allemagne from "../../assets/ville/Allemagne-2.avif";
+import usa from "../../assets/ville/1044194-la-statue-de-la-liberte-a-new-yo.avif";
+import tunisie from "../../assets/ville/Amphithéâtre-dEl-Jem-Tunisie_-7.avif";
+import belgique from "../../assets/ville/belgique.avif";
+import dubai from "../../assets/ville/dubai-tour.avif";
+import london from "../../assets/ville/Les-bus-a-deux-etages-de-Londres-.avif";
+import france from "../../assets/ville/tour-eifel.avif";
+import Lettonie from "../../assets/ville/statut-liberte-riga.avif";
+import chine from "../../assets/ville/statue-histoire-chinoise-700x467.avif";
+import inde from "../../assets/ville/taj-mahal-inde.avif";
+import toronto from "../../assets/ville/toronto_1.avif";
+import finlande from "../../assets/ville/finlande.avif";
+
+const destinations = [
+  { name: "Allemagne", image: allemagne },
+  { name: "USA", image: usa },
+  { name: "Tunisie", image: tunisie },
+  { name: "Belgique", image: belgique },
+  { name: "Dubai", image: dubai },
+  { name: "Londres", image: london },
+  { name: "France", image: france },
+  { name: "Lettonie", image: Lettonie },
+  { name: "Chine", image: chine },
+  { name: "Inde", image: inde },
+  { name: "Toronto", image: toronto },
+  { name: "Finlande", image: finlande },
+];
 
 const imagesList = [image1, image2, image3, image4, image5];
 export function EtudesEtranger() {
@@ -21,58 +50,35 @@ export function EtudesEtranger() {
       </section>
 
       {/* section content */}
-      <section className="mt-10  ">
-        <h2 className="text-5xl text-center font-semibold mb-4 ">
+      <section className="pt-10  bg-[#353D58]">
+        <h2 className="text-5xl text-center font-black text-yellow-500 mb-4 bg-[#353D58]">
           Sélectionnez votre destination
         </h2>
-        <div className="flex flex-row gap-x-16 p-20">
-          <ul className=" pl-6 space-y-2 grid grid-cols-3 gap-4 grid-rows-4">
-            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
-              <strong>Asie :</strong> Plongez dans la culture asiatique tou
-            </li>
-            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
-              <strong>Asie :</strong> Plongez dans la culture asiatique tou
-            </li>
-            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
-              <strong>Asie :</strong> Plongez dans la culture asiatique tou
-            </li>
-            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
-              <strong>Asie :</strong> Plongez dans la culture asiatique tou
-            </li>
-            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
-              <strong>Asie :</strong> Plongez dans la culture asiatique tou
-            </li>
-            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
-              <strong>Asie :</strong> Plongez dans la culture asiatique tou
-            </li>
-            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
-              <strong>Asie :</strong> Plongez dans la culture asiatique tou
-            </li>
-            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
-              <strong>Asie :</strong> Plongez dans la culture asiatique tou
-            </li>
-            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
-              <strong>Asie :</strong> Plongez dans la culture asiatique tou
-            </li>
-            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
-              <strong>Asie :</strong> Plongez dans la culture asiatique tou
-            </li>
-            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
-              <strong>Asie :</strong> Plongez dans la culture asiatique tou
-            </li>
-            <li className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md p-4 border-amber-500 border-4">
-              <strong>Asie :</strong> Plongez dans la culture asiatique tou
-            </li>
-          </ul>
+        <div className="flex flex-row gap-x-16 p-20 bg-[#353D58]">
+          <div className="grid grid-cols-3 grid-rows-4 gap-4 justify-center px-20">
+            {destinations.map((destination, index) => (
+              <div key={index} className="flex flex-col items-center gap-y-2">
+                <div className="w-40 h-28 cursor-pointer bg-white rounded-lg shadow-md border-amber-500 border-4 ">
+                  <img
+                    src={destination.image}
+                    alt={destination.name}
+                    className="h-full  w-full"
+                  />
+                </div>
+                <p className="text-xl text-white font-black text-center">
+                  {destination.name}
+                </p>
+              </div>
+            ))}
+          </div>
+
           <div className="flex flex-col gap-y-14">
             <button className="w-80 h-14 bg-blue-900 rounded hover:bg-blue-700 cursor-pointer text-xl p-2 ">
-<<<<<<< HEAD
-              <i className="fa-solid fa-briefcase fa-xl"></i> Téléchargez toutes
-              nos offres
-=======
-              <i className="fa-solid fa-briefcase fa-xl"></i> Téléchargez toutes nos
-              offres
->>>>>>> 5a0ab0569d5813b87048290d1204677f46c6ad2f
+              {/* <<<<<<< HEAD */}
+              <Link to="/centre-de-telechargement">
+                <i className="fa-solid fa-briefcase fa-xl"></i> Téléchargez
+                toutes nos offres
+              </Link>
             </button>
             <div className="bg-amber-400 h-100 w-80"></div>
           </div>
@@ -85,7 +91,7 @@ export function EtudesEtranger() {
           Vous voulez en savoir plus ?
         </h2>
         <button className="bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer ">
-          Prenez un rendez-vous !
+          <Link to="/contact">Prenez un rendez-vous !</Link>
         </button>
       </section>
     </div>

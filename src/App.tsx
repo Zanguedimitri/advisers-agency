@@ -23,6 +23,11 @@ import Information from "./pages/information";
 import DetailsInformation from "./pages/detailsBlog/detailsInformation";
 import Contact from "./pages/contact";
 
+import LesPlusSollicites from "./Pages/LesPlusSollicites";
+import FormulaireEvaluation from "./Pages/FormulaireEvaluation";
+import CentreTelechargement from "./Pages/CentreTelechargement";
+import FormulaireStageInternational from "./Pages/FormulaireStageInternational";
+import CampsThematiques from "./Pages/ColoniesVacances1";
 // Composant layout contenant Header, Footer et Outlet (zone de contenu dynamique)
 function RootLayout() {
   return (
@@ -54,11 +59,15 @@ const router = createBrowserRouter([
         path: "a-propos",
         element: <Apropos />,
       },
+      { path: "les-plus-sollicites", element: <LesPlusSollicites /> },
       {
         path: "services",
         children: [
-          { path: "etudes-a-l-etranger", element: <EtudesEtranger /> },
-          { path: "work-study", element: <WorkStudy /> },
+          {
+            path: "/services/etudes-a-l-etranger",
+            element: <EtudesEtranger />,
+          },
+          { path: "/services/work-study", element: <WorkStudy /> },
           {
             path: "/services/stage-a-l-international-usa",
             element: <StageInternational />,
@@ -84,15 +93,27 @@ const router = createBrowserRouter([
 
       { element: <Faq></Faq>, path: "faq" },
       {
-        element: <Information></Information>, path: "news", children: [
+        element: <Information></Information>,
+        path: "news",
+        children: [
           {
-            path:'details/:id',
-            element:<DetailsInformation></DetailsInformation>
-          }
-        ]
+            path: "details/:id",
+            element: <DetailsInformation></DetailsInformation>,
+          },
+        ],
       },
       { element: <Contact></Contact>, path: "contact" },
       { element: <WorkAccordionMenu />, path: "accordion-menu" },
+      { element: <FormulaireEvaluation />, path: "formulaire-evaluation" },
+      { element: <CentreTelechargement />, path: "centre-de-telechargement" },
+      {
+        element: <FormulaireStageInternational />,
+        path: "formulaire-stage-international",
+      },
+      {
+        element: <CampsThematiques />,
+        path: "colonies-de-vacances-1",
+      },
     ],
   },
 ]);

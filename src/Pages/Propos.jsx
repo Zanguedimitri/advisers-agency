@@ -2,6 +2,7 @@ import apropos from "../assets/img_apropos.avif";
 import patrick from "../assets/patrick-advisers-bureau-douala.avif";
 import Amira from "../assets/Amira-bureau-advisers-lome.avif";
 import DivNavBar from "../components/DivNavBar";
+import { Link } from "react-router-dom";
 
 export function Apropos() {
   return (
@@ -157,7 +158,21 @@ export function Apropos() {
       </section>
       {/* </section> */}
       {/* section contact */}
-      <section></section>
+      {/* section contact */}
+      <section className="w-full mx-auto p-8  shadow-md mt-10 flex flex-row justify-center gap-24 font-black items-center">
+        <div className="flex flex-col ">
+          <h2 className="text-4xl font-semibold mb-4 text-blue-900">
+            N'hésitez pas à nous contacter
+          </h2>
+
+          <p className="text-blue-700">
+            En cas d'urgence sur nos adresses directes mentionnées ci dessus
+          </p>
+        </div>
+        <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded cursor-pointer ">
+          <Link to="/contact">Nous Contacter</Link>
+        </button>
+      </section>
     </div>
   );
 }

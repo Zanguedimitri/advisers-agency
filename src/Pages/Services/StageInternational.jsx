@@ -6,6 +6,7 @@ import stage4 from "../../assets/stage_i_4.avif";
 import stage5 from "../../assets/stage_i_5.avif";
 import internshipimg from "../../assets/internship-advisers-agency.avif";
 import AllianceAbroadimg from "../../assets/AllianceAbroad-3-W-1024x782-copy2.avif";
+import { Link } from "react-router-dom";
 
 const imagesList = [stage1, stage3, stage4, stage5];
 
@@ -86,7 +87,6 @@ export function StageInternational() {
           <div className="w-full h-20 bg-blue-900 text-white flex flex-col items-start p-6 justify-center">
             <a href="#">
               {" "}
-<<<<<<< HEAD
               <i className="fa-solid fa-file text-black mr-2"></i>Exemple
               d'offre de stage ingénieur
             </a>
@@ -94,15 +94,6 @@ export function StageInternational() {
               {" "}
               <i className="fa-solid fa-file text-black mr-2"></i>Exemple
               d'offre de stage Manager MBA
-=======
-              <i className="fa-solid fa-file text-black mr-2"></i>Exemple d'offre de
-              stage ingénieur
-            </a>
-            <a href="#">
-              {" "}
-              <i className="fa-solid fa-file text-black mr-2"></i>Exemple d'offre de
-              stage Manager MBA
->>>>>>> 5a0ab0569d5813b87048290d1204677f46c6ad2f
             </a>
           </div>
         </div>
@@ -264,7 +255,9 @@ export function StageInternational() {
               formulaire)
             </p>
             <button className="w-60 h-10 p-4 bg-blue-900 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 flex items-center justify-center cursor-pointer">
-              Soumettez le Formulaire
+              <Link to="/formulaire-stage-international">
+                Soumettez le Formulaire
+              </Link>
             </button>
           </div>
         </div>

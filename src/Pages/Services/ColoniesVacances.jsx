@@ -6,6 +6,7 @@ import grid1 from "../../assets/grid1.avif";
 import grid2 from "../../assets/grid2.avif";
 import grid3 from "../../assets/grid3.avif";
 import grid4 from "../../assets/grid4.avif";
+import { Link } from "react-router-dom";
 
 const images = [image1, image2, image3];
 export function ColoniesVacances() {
@@ -45,7 +46,7 @@ export function ColoniesVacances() {
                 requises pour l'effectuer
               </p>
               <button className="border-2 border-amber-500 hover:bg-amber-500 text-white rounded-lg p-2">
-                En savoir plus
+                <Link to="/colonies-de-vacances-1"> En savoir plus</Link>
               </button>
             </div>
 
@@ -63,7 +64,7 @@ export function ColoniesVacances() {
                 qualifiés, le tout dans le FUN
               </p>
               <button className="border-2 border-green-500 hover:bg-green-500 text-white rounded-lg p-2">
-                En savoir plus
+                <Link to="/colonies-de-vacances-1"> En savoir plus</Link>
               </button>
             </div>
             <div className="w-64 h-94  transform-3d">
@@ -83,7 +84,7 @@ export function ColoniesVacances() {
                 avec nos conseils{" "}
               </p>
               <button className="border-2 border-blue-500 hover:bg-blue-500 text-white rounded-lg p-2">
-                En savoir plus
+                <Link to="/colonies-de-vacances-1"> En savoir plus</Link>
               </button>
             </div>
           </div>
@@ -100,7 +101,7 @@ export function ColoniesVacances() {
                 sujet des{" "}
               </p>
               <button className="border-2 border-red-500 hover:bg-red-500 text-white rounded-lg p-2">
-                En savoir plus
+                <Link to="/colonies-de-vacances-1"> En savoir plus</Link>
               </button>
             </div>
           </div>
@@ -109,7 +110,7 @@ export function ColoniesVacances() {
       {/*  */}
       <section className="bg-white p-16 border-2 border-gray-300 flex  justify-end gap-x-10">
         <button className="p-4 cursor-pointer  bg-blue-700 hover:bg-blue-600 text-white rounded-lg">
-          Nous contacter
+          <Link to="/contact"> Nous contacter</Link>
         </button>
       </section>
     </div>

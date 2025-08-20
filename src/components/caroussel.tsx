@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import DivNavBar from "./DivNavBar";
+import DivNavBar from "./divNavBar";
 
 type CarousselProps = {
   images: string[];
@@ -38,8 +38,9 @@ export default function Caroussel({ images, titre }: CarousselProps) {
         {images.map((img, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === currentSlide ? "opacity-100 z-20" : "opacity-0 z-10"
-              }`}
+            className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+              index === currentSlide ? "opacity-100 z-20" : "opacity-0 z-10"
+            }`}
           >
             <img
               src={img}
@@ -65,8 +66,9 @@ export default function Caroussel({ images, titre }: CarousselProps) {
           <button
             key={i}
             onClick={() => goToSlide(i)}
-            className={`w-3 h-3 rounded-full ${currentSlide === i ? "bg-white" : "bg-gray-400"
-              }`}
+            className={`w-3 h-3 rounded-full ${
+              currentSlide === i ? "bg-white" : "bg-gray-400"
+            }`}
             aria-label={`Slide ${i + 1}`}
           ></button>
         ))}

@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Caroussel from "../components/caroussel";
 import first from "../assets/first_home.avif";
 import second from "../assets/second_home.avif";
@@ -15,6 +15,7 @@ export function Home() {
   return (
     <div className="z-10">
       <Caroussel images={imagesList} />
+
       {/* section services */}
       <section className="flex flex-col md:flex-row  gap-x-4 py-20 px-20   bg-gray-300  ">
         <div className="lg:w-4/12 md:w-10/12 flex flex-col  justify-start items-start md:items-center gap-y-8 pb-20">
@@ -29,7 +30,7 @@ export function Home() {
           </p>
           <div className="flex flex-row  gap-x-4 ">
             <button className="bg-blue-900 hover:bg-blue-700 cursor-pointer rounded-md px-2 h-8 w-20">
-              Plus
+              <Link to="/les-plus-sollicites">Plus</Link>
             </button>
             <button className="bg-blue-900  hover:bg-blue-700 cursor-pointer rounded-md px-2 h-8">
               <i className="fa-brands fa-facebook-f text-white"></i>
@@ -39,28 +40,48 @@ export function Home() {
         {/*  */}
         <div className="grid grid-cols-1 items-center sm:grid-cols-3 md:grid-cols-2 md:gap-x-12 lg:grid-cols-3 xl:grid-cols-4  grid-rows-4 md:grid-rows-2 gap-x-12 gap-y-4 w-full  lg:w-8/12">
           <div className="h-42.5 w-42.5 bg-red-700 cursor-pointer  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
-            <p className="text-center"> Les Plus Sollicités</p>
+            <Link className="text-center" to="/les-plus-sollicites">
+              {" "}
+              Les Plus Sollicités
+            </Link>
           </div>
           <div className="h-42.5 w-42.5 bg-red-700 cursor-pointer  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
-            <p className="text-center">Zork & Study</p>
+            <Link className="text-center" to="/services/work-study">
+              Work & Study
+            </Link>
           </div>
           <div className="h-42.5 w-42.5 bg-red-700 cursor-pointer  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
-            <p className="text-center">Etudier à L'étranger</p>
+            <Link className="text-center" to="/services/etudes-a-l-etranger">
+              Etudier à L'étranger
+            </Link>
           </div>
           <div className="h-42.5 w-42.5 bg-red-700 cursor-pointer  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
-            <p className="text-center">Immigration Canadienne</p>
+            <Link className="text-center" to="/services/immigration-canadienne">
+              Immigration Canadienne
+            </Link>
           </div>
           <div className="h-42.5 w-42.5 bg-red-700 cursor-pointer  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
-            <p className="text-center">Les Juniors 08-18 ans</p>
+            <Link className="text-center" to="/services/colonies-de-vacances">
+              Les Juniors 08-18 ans
+            </Link>
           </div>
           <div className="h-42.5 w-42.5 bg-red-700 cursor-pointer  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
-            <p className="text-center">Stages à L'international</p>
+            <Link
+              className="text-center"
+              to="/services/stage-a-l-international-usa"
+            >
+              Stages à L'international
+            </Link>
           </div>
           <div className="h-42.5 w-42.5 bg-red-700 cursor-pointer  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
-            <p className="text-center">Voyages Découvertes</p>
+            <Link className="text-center" to="/services/voyages-decouvertes">
+              Voyages Découvertes
+            </Link>
           </div>
           <div className="h-42.5 w-42.5 bg-red-700 cursor-pointer  rounded-xl flex flex-col justify-center items-center p-4 text-2xl font-semibold text-white hover:text-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300">
-            <p className="text-center">Concours Étudiants</p>
+            <Link className="text-center" to="/services/student-competitions">
+              Concours Étudiants
+            </Link>
           </div>
         </div>
       </section>
@@ -78,7 +99,7 @@ export function Home() {
               expertise avérée.{" "}
             </p>
             <button className="bg-blue-900 rounded-md px-2 h-8 w-20  hover:bg-blue-700 cursor-pointer">
-              Plus
+              <Link to="/a-propos">Plus</Link>
             </button>
           </div>
           {/* <div className="h-140 w-100"> */}
@@ -108,7 +129,13 @@ export function Home() {
                 votre
               </p>
               <button className="hover:bg-blue-600 h-10 rounded px-2 cursor-pointer bg-[url()]  bg-blue-800">
-                <a href="#">Évaluation Gratuite</a>
+                <Link
+                  className="text-center text-lg p-10 "
+                  to="/formulaire-evaluation"
+                >
+                  {" "}
+                  Évaluation Gratuite
+                </Link>
               </button>
             </div>
           </div>
