@@ -6,111 +6,146 @@ import grid1 from "../../assets/grid1.avif";
 import grid2 from "../../assets/grid2.avif";
 import grid3 from "../../assets/grid3.avif";
 import grid4 from "../../assets/grid4.avif";
+import { Link } from "react-router-dom";
 
 const images = [image1, image2, image3];
+
 export function ColoniesVacances() {
   return (
-    <div>
+    <div className="bg-gray-50">
+      {/* --- CAROUSEL --- */}
       <Caroussel images={images} />
-      {/*  */}
-      <section className="flex flex-col items-center p-20 gap-y-5">
-        <p className="text-justify text-lg pl-20 pr-20">
+
+      {/* --- INTRO SECTION --- */}
+      <section className="flex flex-col items-center px-5 sm:px-10 md:px-20 py-8 md:py-16 gap-y-6">
+        <p className="text-justify text-base sm:text-lg md:text-xl leading-relaxed text-gray-700">
           Les échanges interculturels et les expériences internationales sont
-          atouts inestimables pour l’éducation de nos enfants. Nous le savons,
-          par conséquent, nous proposons plusieurs camps d’été aux parents pour
-          le développement harmonieux de leurs enfants.
+          des atouts inestimables pour l’éducation de nos enfants. Nous le
+          savons, par conséquent, nous proposons plusieurs camps d’été aux
+          parents pour le développement harmonieux de leurs enfants.
         </p>
-        <p className="text-justify text-lg  pl-20 pr-20">
+        <p className="text-justify text-base sm:text-lg md:text-xl leading-relaxed text-gray-700">
           <span className="font-bold">Advisers Agency</span> et ses partenaires
           vous proposent des camps d’été thématiques et non thématiques avec à
           la clé la création d'un réseau d'amis venant du monde entier, qu'ils
           sauront valoriser dans le futur proche. De plus, les participants
           interagissent avec d'autres pairs de différents pays et apprennent les
-          bases d'une langue seconde de leur choix pendant les camp. Le
-          leadership, le réseautage, le divertissement, l’athlétisme et
-          l'apprentissage sont les piliers qui sous tendent les camps de
+          bases d'une langue seconde de leur choix pendant les camps.
+          <br />
+          <br />
+          Le leadership, le réseautage, le divertissement, l’athlétisme et
+          l'apprentissage sont les piliers qui sous-tendent les camps de
           vacances que nous vous proposons.
         </p>
       </section>
-      {/*  */}
-      <section>
-        <div className="grid grid-cols-2 grid-rows-2 pl-30 pr-30 gap-0 justify-items-center text-white">
-          {/* grid1 */}
-          <div className="flex flex-row items-center justify-center ">
-            <div className="w-64 h-94  bg-red-700 flex flex-col gap-y-20 p-4 justify-center items-center">
-              {" "}
-              <h1 className="text-2xl font-bold">Colonies à Thèmes</h1>
-              <p className="text-center">
-                Se plonger dans l'univers d'un métier et découvrir les aptitudes
-                requises pour l'effectuer
-              </p>
-              <button className="border-2 border-amber-500 hover:bg-amber-500 text-white rounded-lg p-2">
-                En savoir plus
-              </button>
-            </div>
 
-            <div className="w-64 h-94 transform-3d">
-              <img src={`${grid1}`} alt="" />
+      {/* --- GRID SECTION --- */}
+      <section className="w-full bg-blue-600 flex flex-col items-center py-12 px-4 sm:px-6 md:px-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl text-white">
+          {/* CARTE 1 */}
+          <div className="flex flex-col md:flex-row items-center gap-4">
+            <div className="bg-red-700 rounded-2xl shadow-lg p-6 flex flex-col gap-4 justify-between text-center w-full md:w-1/2">
+              <h1 className="text-xl md:text-2xl font-bold">
+                Colonies à Thèmes
+              </h1>
+              <p>
+                Se plonger dans l'univers d'un métier et découvrir les aptitudes
+                requises pour l'effectuer.
+              </p>
+              <Link
+                to="/colonies-de-vacances-1"
+                className="border-2 border-amber-500 hover:bg-amber-500 transition-all rounded-lg py-2 px-4"
+              >
+                En savoir plus
+              </Link>
             </div>
+            <img
+              src={grid1}
+              alt="Colonies à thèmes"
+              className="rounded-2xl shadow-md object-cover w-full md:w-1/2 h-52 md:h-64"
+            />
           </div>
-          {/* grid2 */}
-          <div className="flex flex-row items-center justify-center">
-            <div className="w-64 h-94 bg-blue-700 flex flex-col gap-y-20 p-4 justify-center items-center">
-              {" "}
-              <h1 className="text-2xl font-bold ">Colonies Sportives</h1>
-              <p className="text-center">
+
+          {/* CARTE 2 */}
+          <div className="flex flex-col md:flex-row items-center gap-4">
+            <div className="bg-blue-700 rounded-2xl shadow-lg p-6 flex flex-col gap-4 justify-between text-center w-full md:w-1/2">
+              <h1 className="text-xl md:text-2xl font-bold">
+                Colonies Sportives
+              </h1>
+              <p>
                 Apprenez les bases de votre sport préféré avec des coachs
-                qualifiés, le tout dans le FUN
+                qualifiés, le tout dans le FUN.
               </p>
-              <button className="border-2 border-green-500 hover:bg-green-500 text-white rounded-lg p-2">
+              <Link
+                to="/colonies-de-vacances-1"
+                className="border-2 border-green-500 hover:bg-green-500 transition-all rounded-lg py-2 px-4"
+              >
                 En savoir plus
-              </button>
+              </Link>
             </div>
-            <div className="w-64 h-94  transform-3d">
-              <img src={`${grid2}`} alt="" />
+            <img
+              src={grid2}
+              alt="Colonies sportives"
+              className="rounded-2xl shadow-md object-cover w-full md:w-1/2 h-52 md:h-64"
+            />
+          </div>
+
+          {/* CARTE 3 */}
+          <div className="flex flex-col md:flex-row items-center gap-4">
+            <img
+              src={grid3}
+              alt="Destinations et prix"
+              className="rounded-2xl shadow-md object-cover w-full md:w-1/2 h-52 md:h-64"
+            />
+            <div className="bg-amber-400 rounded-2xl shadow-lg p-6 flex flex-col gap-4 justify-between text-center w-full md:w-1/2">
+              <h1 className="text-xl md:text-2xl font-bold">
+                Destinations & Prix
+              </h1>
+              <p>
+                Choisissez le moment idéal pour vous amuser, nous vous assistons
+                avec nos conseils.
+              </p>
+              <Link
+                to="/colonies-de-vacances-1"
+                className="border-2 border-blue-500 hover:bg-blue-500 transition-all rounded-lg py-2 px-4"
+              >
+                En savoir plus
+              </Link>
             </div>
           </div>
-          {/* grid3 */}
-          <div className="flex flex-row items-center justify-center">
-            <div className="w-64 h-94">
-              <img src={`${grid3}`} alt="" />
-            </div>
-            <div className="w-64 h-94 bg-amber-400 flex flex-col gap-y-20 p-4 justify-center items-center">
-              {" "}
-              <h1 className="text-2xl font-bold">Destinations & Prix</h1>
-              <p className="text-center">
-                choisissez le moment idéal pour vous amuser, nous vous assistons
-                avec nos conseils{" "}
+
+          {/* CARTE 4 */}
+          <div className="flex flex-col md:flex-row items-center gap-4">
+            <img
+              src={grid4}
+              alt="Âges et délais"
+              className="rounded-2xl shadow-md object-cover w-full md:w-1/2 h-52 md:h-64"
+            />
+            <div className="bg-green-700 rounded-2xl shadow-lg p-6 flex flex-col gap-4 justify-between text-center w-full md:w-1/2">
+              <h1 className="text-xl md:text-2xl font-bold">Âges et Délais</h1>
+              <p>
+                Suis-je éligible aux colonies de vacances ? Découvrez toutes les
+                informations nécessaires.
               </p>
-              <button className="border-2 border-blue-500 hover:bg-blue-500 text-white rounded-lg p-2">
+              <Link
+                to="/colonies-de-vacances-1"
+                className="border-2 border-red-500 hover:bg-red-500 transition-all rounded-lg py-2 px-4"
+              >
                 En savoir plus
-              </button>
-            </div>
-          </div>
-          {/* grid4 */}
-          <div className="flex flex-row items-center justify-center">
-            <div className="w-64 h-94 ">
-              <img src={`${grid4}`} alt="" />
-            </div>
-            <div className="w-64 h-94 bg-green-700 flex flex-col gap-y-20 p-4 justify-center items-center">
-              {" "}
-              <h1 className="text-2xl font-bold">Âges et délais</h1>
-              <p className="text-center">
-                Suis-je éligible au colonies de vacances? Que faut il savoir au
-                sujet des{" "}
-              </p>
-              <button className="border-2 border-red-500 hover:bg-red-500 text-white rounded-lg p-2">
-                En savoir plus
-              </button>
+              </Link>
             </div>
           </div>
         </div>
       </section>
-      {/*  */}
-      <section className="bg-white p-16 border-2 border-gray-300 flex  justify-end gap-x-10">
-        <button className="p-4 cursor-pointer  bg-blue-700 hover:bg-blue-600 text-white rounded-lg">
+
+      {/* --- CONTACT SECTION --- */}
+      <section className="bg-white px-6 md:px-16 border-t-2 border-gray-300 flex flex-col items-center md:flex-row justify-center md:justify-end gap-4 py-10">
+        <Link
+          to="/contact"
+          className="bg-blue-700 hover:bg-blue-600 transition-all text-white rounded-lg px-6 py-3 w-full md:w-auto text-center font-semibold shadow-lg"
+        >
           Nous contacter
-        </button>
+        </Link>
       </section>
     </div>
   );

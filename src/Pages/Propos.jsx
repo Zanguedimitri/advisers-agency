@@ -1,7 +1,8 @@
 import apropos from "../assets/img_apropos.avif";
 import patrick from "../assets/patrick-advisers-bureau-douala.avif";
 import Amira from "../assets/Amira-bureau-advisers-lome.avif";
-import DivNavBar from "../components/DivNavBar";
+import DivNavBar from "../components/divNavBar";
+import { Link } from "react-router-dom";
 
 export function Apropos() {
   return (
@@ -89,27 +90,27 @@ export function Apropos() {
       </section>
       {/* section equipe */}
       {/* <section> */}
-      <section class="bg-blue-900  text-black py-10 px-6">
-        <div class="max-w-6xl mx-auto bg-white p-6 relative -mt-6">
-          <h2 class="text-3xl font-bold mb-1">Rencontrez l'équipe</h2>
+      <section className="bg-blue-900  text-black py-10 px-6">
+        <div className="max-w-6xl mx-auto bg-white p-6 relative -mt-6">
+          <h2 className="text-3xl font-bold mb-1">Rencontrez l'équipe</h2>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 justify-center items-center mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 justify-center items-center mt-10">
             {/* <!-- CARD 1 --> */}
-            <div class="text-center">
+            <div className="text-center">
               <img
                 src={`${patrick}`}
                 alt="Marie Brun"
-                class="mx-auto mb-4 w-30"
+                className="mx-auto mb-4 w-30"
               />
-              <h3 class="font-bold uppercase">Patrick Ngounou, CEO</h3>
+              <h3 className="font-bold uppercase">Patrick Ngounou, CEO</h3>
 
               <a
-                class="text-blue-900  font-medium mb-2"
+                className="text-blue-900  font-medium mb-2"
                 href="mailto:patrick@advisers-agency.com "
               >
                 patrick@advisers-agency.com{" "}
               </a>
-              <p class="text-sm text-gray-600 mb-4">
+              <p className="text-sm text-gray-600 mb-4">
                 Passionné d'éducation et d'orientation Académique, Patrick est
                 le promoteur de la plateforme web d'orientation baptisée
                 Student's MAG. Il est aussi promoteur de plusieurs projets
@@ -118,38 +119,38 @@ export function Apropos() {
                 rêve c'est de faire jaillir l'étincelle cachée en chaque jeune
                 Africain.
               </p>
-              <div class="flex justify-center space-x-4 text-black">
-                <i class="fab fa-facebook-f "></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
+              <div className="flex justify-center space-x-4 text-black">
+                <i className="fab fa-facebook-f "></i>
+                <i className="fab fa-twitter"></i>
+                <i className="fab fa-instagram"></i>
               </div>
             </div>
 
             {/* <!-- CARD 2 --> */}
-            <div class="text-center">
+            <div className="text-center">
               <img
                 src={`${Amira}`}
                 alt="Anne Richmond"
-                class="mx-auto mb-4 w-30"
+                className="mx-auto mb-4 w-30"
               />
-              <h3 class="font-bold uppercase ">Amira Sangban, GM-Lome</h3>
+              <h3 className="font-bold uppercase ">Amira Sangban, GM-Lome</h3>
               <a
-                class="text-blue-900  font-medium mb-2"
+                className="text-blue-900  font-medium mb-2"
                 href="mailto:overseas@advisers-agency.com"
               >
                 patrick@advisers-agency.com{" "}
               </a>
-              <p class="text-sm text-gray-600 mb-4">
+              <p className="text-sm text-gray-600 mb-4">
                 Dynamique et passionnée de tourisme et de découverte, elle
                 incarne la réussite de la femme Togolaise. Son engagement dans
                 les organismes bénévole depuis bientôt 10 ans lui a permis de
                 visiter plusieurs pays dans le monde. Elle est propriétaire
                 d'une agence de biellette pour le bénéfice de nos candidats.
               </p>
-              <div class="flex justify-center space-x-4 text-black">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
+              <div className="flex justify-center space-x-4 text-black">
+                <i className="fab fa-facebook-f"></i>
+                <i className="fab fa-twitter"></i>
+                <i className="fab fa-instagram"></i>
               </div>
             </div>
           </div>
@@ -157,7 +158,21 @@ export function Apropos() {
       </section>
       {/* </section> */}
       {/* section contact */}
-      <section></section>
+      {/* section contact */}
+      <section className="w-full mx-auto p-8  shadow-md mt-10 flex flex-row justify-center gap-24 font-black items-center">
+        <div className="flex flex-col ">
+          <h2 className="text-4xl font-semibold mb-4 text-blue-900">
+            N'hésitez pas à nous contacter
+          </h2>
+
+          <p className="text-blue-700">
+            En cas d'urgence sur nos adresses directes mentionnées ci dessus
+          </p>
+        </div>
+        <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded cursor-pointer ">
+          <Link to="/contact">Nous Contacter</Link>
+        </button>
+      </section>
     </div>
   );
 }

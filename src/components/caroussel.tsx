@@ -1,20 +1,21 @@
 import { useEffect, useState } from "react";
-// import divNavBar from "./divNavBar";
-import DivNavBar from "./DivNavBar";
+import DivNavBar from "./divNavBar";
+
 type CarousselProps = {
   images: string[];
+  titre?: string; // un titre unique pour toutes les slides
 };
 
-export default function Caroussel({ images }: CarousselProps) {
+export default function Caroussel({ images, titre }: CarousselProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Auto-slide every 5s (optional)
+  // Auto-slide toutes les 5 secondes
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % images.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, [images.length]);
 
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
@@ -30,7 +31,6 @@ export default function Caroussel({ images }: CarousselProps) {
 
   return (
     <div className="relative w-full z-0">
-      {/* <div className="h-24 bg-white"></div> */}
       <DivNavBar />
 
       {/* Images */}
@@ -47,6 +47,15 @@ export default function Caroussel({ images }: CarousselProps) {
               alt={`Slide ${index}`}
               className="block w-full h-full object-cover"
             />
+
+            {/* Titre centré */}
+            {titre && (
+              <div className="absolute inset-0 flex items-center justify-center">
+                <h2 className="text-3xl md:text-9xl font-bold text-white drop-shadow-lg text-center px-4">
+                  {titre}
+                </h2>
+              </div>
+            )}
           </div>
         ))}
       </div>
